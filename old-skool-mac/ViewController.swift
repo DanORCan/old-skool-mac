@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainLbl: UILabel!
     
-    var phrases = ["Booting from floppy... \n","Reading from disk... \n","Updating Registry...\n",".............\n","...................\n","Welcome, Jessica.   \n It is nice to see you again."]
+    var phrases = ["Booting from floppy... \n","Reading from disk... \n","Updating Registry...\n",".............\n","...................\n ...........................\n","Welcome, Jessica.   \n It is nice to see you again."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
