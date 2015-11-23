@@ -14,13 +14,29 @@ class ViewController: UIViewController {
     
     var oddNumbers = [Int]()
     var sums = [Int]()
+    var count = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for var i in 1..<100 {
+            if i % 2 != 0 {
+                oddNumbers.append(i)
+            }
+            i++
+        }
         
-       
+        for var oddnum in oddNumbers {
+            sums.append(oddnum + 5)
+        }
+        
+        count = 0
+        repeat {
+            print("The sum is:  \(sums[count])")
+            mainLbl.text = "The sum is:  \(sums[count])"
+            count++
+        } while count < sums.count
     }
 
     override func didReceiveMemoryWarning() {
